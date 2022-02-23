@@ -12,7 +12,7 @@ function getCurrentUrl() {
 
 function getTeamId() {
   let teamIdMatchArray = getCurrentUrl().match(teamRegex)
-  if teamIdMatchArray.length > 0 {
+  if (teamIdMatchArray.length > 0) {
     console.log(teamIdMatchArray[1].match(/[0-9]+/)[1])
     return teamIdMatchArray[1].match(/[0-9]+/)[1]
   } else {
