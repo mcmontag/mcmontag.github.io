@@ -26,6 +26,7 @@ function setLineup() {
   let teamId = getTeamId();
   let requestData = {
     method: 'POST',
+    mode: 'no-cors',
     headers: {
       'Content-Type': 'application/json'
     },
