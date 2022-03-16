@@ -26,12 +26,13 @@ function setLineup() {
   let teamId = getTeamId();
   let requestData = {
     method: 'POST',
-    mode: 'no-cors',
+    mode: 'no-cors', // TODO: set up cors on the server-side
     headers: {
       'Content-Type': 'application/json'
     },
     body: JSON.stringify({ teamId: teamId, leagueId: leagueId })
   };
   
-  return fetch(apiUrl, requestData).then(response => response.json()).then(text => alert(JSON.stringify(text)));
+  return fetch(apiUrl, requestData).then(response => alert("Response received.  I can't tell you anything about it right now, though"));
+  //return fetch(apiUrl, requestData).then(response => response.json()).then(text => alert(JSON.stringify(text)));
 }
