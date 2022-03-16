@@ -33,5 +33,5 @@ function setLineup() {
     body: JSON.stringify({ teamId: teamId, leagueId: leagueId })
   };
   
-  return fetch(apiUrl, requestData).then(response => response.text()).then(text => alert(text));
+  return fetch(apiUrl, requestData).then(response => response.json()).then(text => alert(JSON.stringify(text)));
 }
