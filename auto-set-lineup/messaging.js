@@ -1,7 +1,7 @@
 const teamRegex = /team([0-9]+)/
 const leagueId = 459936077;
 
-const apiUrl = "http://mattmontag.one/api/v1/fantasy/hockey/setlineup"
+const apiUrl = "https://mattmontag.one/api/v1/fantasy/hockey/setlineup"
 
 async function fetchAsync (url) {
   let response = await fetch(url);
